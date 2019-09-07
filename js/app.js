@@ -12,6 +12,10 @@
 
         function getMessagge(lunchMenu){
 
+            if (lunchMenu.trim() == '') {
+                return "Please enter data first";
+            }
+
             var items   = lunchMenu.split(',');
             var message = '';
 
